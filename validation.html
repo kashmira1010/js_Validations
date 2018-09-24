@@ -1,0 +1,73 @@
+
+<html>
+
+<head>
+    <title> User Details </title>
+</head>
+
+<body>
+
+
+	
+    <h2> User Details </h2>
+
+    <form id='userForm'>
+        <div>
+            <label> First Name: </label>
+            <input type='text' id='firstname' placeholder='First Name'>
+        </div>
+        <br>
+
+        <div>
+            <label> Last Name: </label>
+            <input type='text' id='lastname' placeholder='Last Name'>
+        </div>
+        <br>
+		
+		<div>
+            <label> Email: </label>
+            <input type='email' id='email' placeholder='Email'>
+        </div>
+        <br>
+        
+		<div>
+            <label> Organization: </label>
+            <input type='text' id='organization' placeholder='Organization'>
+        </div>
+        <br>
+
+        <div>
+            <label> Phone Number: </label>
+            <input type='number' id='phone' placeholder='Phone Number'>
+        </div>
+        <br>
+
+        <div id='genders'>
+            <label> Gender: </label>
+            <input type='radio' id='r1' name='gender' value='Male'> Male
+            <input type='radio' id='r2' name='gender' value='Female'> Female
+        </div>
+        <br>
+
+        <input type='button' value='Submit' onclick=addUser(users);>
+
+      </form>
+    <hr>
+
+    <h2> Result </h2>
+    <div>
+        <table border='1px' id='tbl' width='70%' style='border-collapse:collapse'>
+            <tr id='tbl_rows'>
+                <th><b>First Name</b></th>
+                <th><b>Last Name</b></th>
+                <th><b>Email</b></th>
+				<th><b>Organization</b></th>
+                <th><b>Phone Number</b></th>
+                <th><b>Gender</b></th>
+            </tr>
+        </table>
+    </div>
+   <script type="text/javascript" src = "valid.js"></script>
+</body>
+
+</html>
